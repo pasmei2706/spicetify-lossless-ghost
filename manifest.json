@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Lossless Ghost",
+    "description": "Hide the “Lossless” badge in Spotify’s bottom-left Now Playing widget.",
+    "preview": "preview.png",
+    "main": "lossless-ghost.js",
+    "readme": "README.md",
+    "authors": [
+      { "name": "Pas", "url": "https://pasme.dev" }
+    ],
+    "tags": ["now-playing", "ui", "declutter", "minimal"]
+  }
+]
