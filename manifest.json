@@ -6,8 +6,8 @@
     "main": "lossless-ghost.js",
     "readme": "README.md",
     "authors": [
-      { "name": "Pas", "url": "https://pasme.dev" }
+      { "name": "pasme.dev", "url": "https://pasme.dev/dev" }
     ],
-    "tags": ["now-playing", "ui", "declutter", "minimal"]
+    "tags": ["now-playing", "ui", "declutter", "spotify", "lossless", "minimal"]
   }
 ]
