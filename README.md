@@ -2,8 +2,6 @@
 
 Hides the **“Lossless”** badge/label in Spotify’s **bottom-left Now Playing widget**.
 
-Website: https://pasme.dev
-
 ## What it does
 - Removes the visible **Lossless** badge in the Now Playing widget (bottom-left)
 - Scoped to the Now Playing widget only (no global UI side effects)
