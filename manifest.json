@@ -1,13 +1,20 @@
-[
-  {
-    "name": "Lossless Ghost",
-    "description": "Hide the “Lossless” badge in Spotify’s bottom-left Now Playing widget.",
-    "preview": "preview.png",
-    "main": "lossless-ghost.js",
-    "readme": "README.md",
-    "authors": [
-      { "name": "pasme.dev", "url": "https://pasme.dev/dev" }
-    ],
-    "tags": ["now-playing", "ui", "declutter", "spotify", "lossless", "minimal"]
-  }
-]
+{
+  "name": "Lossless Ghost",
+  "description": "Hide Spotify’s Lossless audio badge in the Now Playing bar.",
+  "preview": "preview.png",
+  "main": "lossless-ghost.js",
+  "readme": "README.md",
+  "authors": [
+    { "name": "pasme.dev", "url": "https://pasme.dev/dev" }
+  ],
+  "tags": [
+    "spotify",
+    "spicetify",
+    "spicetify-extension",
+    "now-playing",
+    "audio-quality",
+    "lossless",
+    "lossless-audio",
+    "declutter"
+  ]
+}

@@ -1,50 +1,66 @@
-# Lossless Ghost (Spicetify Extension)
+# Lossless Ghost — hide Spotify’s Lossless badge with Spicetify
 
-Hides the **“Lossless”** badge/label in Spotify’s **bottom-left Now Playing widget**.
+**Lossless Ghost** is a lightweight Spicetify extension that hides the **Lossless** audio-quality badge in Spotify’s bottom-left **Now Playing** bar. It keeps the track title, artist, and the rest of Spotify’s interface visible.
 
-<img src="preview.png" alt="preview" style="width:650px;"/>
+![Lossless Ghost preview](preview.png)
 
-## What it does
-- Removes the visible **Lossless** badge in the Now Playing widget (bottom-left)
-- Scoped to the Now Playing widget only (no global UI side effects)
-- Robust against Spotify UI re-renders (MutationObserver-based)
+## Features
 
-## Install
-1) Download `lossless-ghost.js`
-2) Put it into your Spicetify Extensions folder:
+- Hides the Lossless badge in Spotify’s Now Playing widget.
+- Detects the badge as a button or plain text, including accessible labels.
+- Watches Spotify’s UI for track changes and re-renders.
+- Limits changes to the Now Playing widget.
 
-- **Windows:** `%appdata%\spicetify\Extensions\`
-- **macOS:** `~/.config/spicetify/Extensions/`
-- **Linux:** `~/.config/spicetify/Extensions/`
+## Install from Spicetify Marketplace
 
-Tip:
-```bash
-spicetify config-dir
-```
+Open **Marketplace → Extensions** in Spotify and search for **Lossless Ghost**. This public repository carries the `spicetify-extensions` GitHub topic used by Spicetify Marketplace discovery.
 
-3) Enable + apply:
-```bash
-spicetify config extensions lossless-ghost.js
-spicetify apply
-```
+## Manual installation
+
+1. Download [`lossless-ghost.js`](lossless-ghost.js).
+2. Copy it into your Spicetify Extensions folder:
+   - Windows: `%appdata%\spicetify\Extensions\`
+   - macOS/Linux: `~/.config/spicetify/Extensions/`
+3. Enable it and apply Spicetify:
+
+   ```bash
+   spicetify config extensions lossless-ghost.js
+   spicetify apply
+   ```
+
+Find the Spicetify configuration folder with `spicetify config-dir`.
 
 ## Update
-Replace `lossless-ghost.js`, then:
+
+Replace `lossless-ghost.js` with the latest version and run:
+
 ```bash
 spicetify apply
-# if Spotify didn't reload:
-spicetify restart
 ```
 
-## Uninstall / Disable
+If a Spotify update changed the client build, refresh Spicetify’s backup first:
+
+```bash
+spicetify backup apply
+```
+
+## Disable or uninstall
+
+Disable the extension while keeping its file:
+
 ```bash
 spicetify config extensions lossless-ghost.js-
 spicetify apply
 ```
 
-## Notes
-- This extension matches the badge by its visible label text ("Lossless").
-- If Spotify changes the label, update the label match in `lossless-ghost.js`.
+## Tests
+
+Run the DOM smoke tests with Node.js:
+
+```bash
+node test-smoke.cjs
+```
 
 ## License
+
 MIT
